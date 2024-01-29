@@ -6,6 +6,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.boot.dynamic_partitions=true \
 	ro.boot.dynamic_partitions_retrofit=true
 
+# Emulated storage
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Fastbootd
 TW_INCLUDE_FASTBOOTD := true
 PRODUCT_PACKAGES += \
