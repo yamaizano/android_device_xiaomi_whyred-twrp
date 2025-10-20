@@ -15,7 +15,7 @@
 #
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/xiaomi/wayne/device.mk)
+$(call inherit-product, device/xiaomi/whyred/device.mk)
 
 # Inherit from common AOSP config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
@@ -28,14 +28,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := wayne
+PRODUCT_RELEASE_NAME := whyred
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := twrp_wayne
-PRODUCT_DEVICE := wayne
+PRODUCT_NAME := twrp_whyred
+PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI 6X
+PRODUCT_MODEL := Redmi Note 5
 
-TARGET_VENDOR_PRODUCT_NAME := wayne
-TARGET_VENDOR_DEVICE_NAME := wayne
+TARGET_VENDOR_PRODUCT_NAME := whyred
+TARGET_VENDOR_DEVICE_NAME := whyred
